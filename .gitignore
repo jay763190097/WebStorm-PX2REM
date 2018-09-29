@@ -53,3 +53,5 @@ Thumbs.db
 **/.project
 */target/
 target/
+out/
+output/

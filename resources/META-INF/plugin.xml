@@ -1,14 +1,12 @@
 <idea-plugin>
-  <id>com.sunq.action.WebStormPX2REMTools</id>
-  <name>WebStorm----px自动转rem工具</name>
-  <version>1.1</version>
-  <vendor email="sunqian1991@gmail.com">sunqian</vendor>
-  <description>webstorm中px自动转rem工具</description>
+  <id>com.jay.action.Px2RemAction</id>
+  <name>px2rem</name>
+  <version>1.2</version>
+  <vendor email="jiangmang.1992@163.com">jay</vendor>
+  <description>px自动转rem工具,快捷键shift+f</description>
 
   <change-notes>
-    v1.1:在原有的基础上添加了自动转换当前光标所在行中可以转换的值，将设置比值的窗口更改到tools菜单下；
-    &#x000D;
-    v1.0:初始编写，webstorm插件，主要是把css中的px转换为rem，其中可以在webstorm中设置转化的比值(window-SetPX2REM),选中后通过快捷键shift+f来转化，如比值为100，选中"100px"后，点击shift+f，自动转化为1.00rem
+    v1.2:自动获取光标前一个css属性值，转换为rem,增加设置是否显示注释
   </change-notes>
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
@@ -27,11 +25,11 @@
 
   <actions>
     <!-- Add your actions here -->
-    <action id="WebStormPX2REMToolsID" class="com.sunq.action.WebStormPX2REMTools" text="WebStormPX2REMTools"
-            description="WebStormPX2REMTools">
+    <action id="PX2REMToolsID" class="com.jay.action.Px2RemAction" text="Px2RemTools"
+            description="Px2RemTools">
       <keyboard-shortcut keymap="$default" first-keystroke="shift f"/>
     </action>
-    <action id="SetPX2REMID" class="com.sunq.action.SetPX2REM" text="SetPX2REM" description="SetPX2REM">
+    <action id="SetPX2REMID" class="com.jay.action.SetPX2REM" text="SetPX2REM" description="SetPX2REM">
       <add-to-group group-id="ToolsMenu" anchor="last" />
     </action>
   </actions>
