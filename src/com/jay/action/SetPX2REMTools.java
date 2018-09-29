@@ -71,7 +71,7 @@ public class SetPX2REMTools extends JDialog {
         dispose();
     }
 
-    public static void main(String[] args) {
+  /*  public static void main(String[] args) {
         SetPX2REMTools dialog = new SetPX2REMTools();
         dialog.pack();
         dialog.setSize(300,150);
@@ -83,5 +83,5 @@ public class SetPX2REMTools extends JDialog {
         dialog.setLocation(screenWidth/2 - windowWidth/2, screenHeight/2 - windowHeight/2);//设置窗口居中显示
         dialog.setVisible(true);
         System.exit(0);
-    }
+    }*/
 }
