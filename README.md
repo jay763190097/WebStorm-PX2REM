@@ -1,4 +1,4 @@
-# WebStorm-PX2REM
+# PX2REM
 
 #### 项目介绍
 
